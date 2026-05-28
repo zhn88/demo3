@@ -1,0 +1,4 @@
+<launch>
+    <!-- 语音识别(讯飞IAT) -->
+    <node name="iat_publish" pkg="robot_voice" type="iat_publish" output="screen" />
+</launch>

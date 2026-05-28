@@ -1,0 +1,10 @@
+<launch>
+  <node name="main" pkg="robot_slam" type="main.py"  output="screen">
+      <param name="goalListX" value="   1.11,  1.11,   1.11,  0.1"/>
+      <param name="goalListY" value="  -0.44, -1.64, -2.84, -3.3"/>
+      <param name="goalListYaw" value="0.0,   0.0, 0.0,  0.0"/>
+  </node>
+
+  <!-- 启动 RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robot_slam)/rviz/rviz.rviz" />
+</launch>

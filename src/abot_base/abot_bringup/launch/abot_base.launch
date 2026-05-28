@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find abot_bringup)/launch/robot_with_imu.launch"/>
+    <include file="$(find abot_bringup)/launch/shoot.launch"/>
+    <include file="$(find abot_shoot)/launch/cam.launch"/>
+</launch>
